@@ -1,0 +1,15 @@
+nav {
+  opacity: 0.8;
+  padding: 25px;
+  width: 100%;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 20px;
+  color: white;
+}
+
+hr {
+  margin: 15px;
+}
