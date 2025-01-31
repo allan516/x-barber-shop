@@ -94,7 +94,7 @@ main article .price {
   background-size: contain;
   background-repeat: no-repeat;
   width: 100vw;
-  height: 800px;
+  height: 100vh;
 }
 
 .container-presentation h1 {
@@ -123,12 +123,49 @@ main article .price {
 .container-presentation div .presentation-img2 {
   position: absolute;
   left: 55%;
+  margin-top: 100px;
   height: 400px;
   width: 400px;
 }
 /* #c7bca0 */
 
-@media screen and (max-width: 968px) {
+/* seção 2 apresentação de serviços */
+
+.service-presentation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #977144;
+}
+
+.service-presentation h1 {
+  padding: 10px;
+}
+
+.service-presentation div {
+  max-width: 700px;
+  margin: 0px 100px;
+}
+
+.service-presentation-img1 {
+  margin: 60px !important;
+  border-radius: 50% 50% 3% 3%;
+}
+
+.service-presentation-img2 {
+  clip-path: polygon(
+    20% 0%,
+    80% 0%,
+    100% 20%,
+    100% 100%,
+    80% 100%,
+    20% 100%,
+    0 86%,
+    0 0
+  );
+}
+
+@media screen and (max-width: 1500px) {
   header h1 {
     right: 15%;
     font-size: 3rem;
@@ -139,6 +176,100 @@ main article .price {
     color: lightgray;
     font-size: 1.5rem;
     top: 20%;
+  }
+
+  /* primeiro container responsivo */
+
+  main article {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  main article section .title1 {
+    color: #977144;
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+
+  main article section h1 {
+    font-size: 1rem;
+  }
+
+  main article section p {
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 5px;
+  }
+
+  main article .card-service {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    max-height: 200px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+    border: 1px solid #9772444d;
+  }
+  main article .service-icons {
+    margin: unset;
+    padding: 10px;
+    width: 32px;
+    height: 32px;
+  }
+
+  main article .price {
+    color: #977144;
+    font-size: 1.5rem;
+  }
+
+  /* container 2 responsivo */
+
+  .container-presentation {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-presentation h1 {
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  .container-presentation div {
+    margin: 0px auto;
+    width: 400px;
+  }
+
+  .container-presentation div .presentation-img1 {
+    display: none;
+  }
+
+  .container-presentation div .presentation-img2 {
+    position: inherit;
+    height: 300px;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  main article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  main article section .title1 {
+    text-align: center;
+    color: #977144;
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+
+  .service-presentation-img1 {
+    display: none;
   }
 }
 
@@ -161,5 +292,49 @@ main article .price {
     font-size: 1.5rem;
     top: 20%;
     left: 25px;
+  }
+
+  main article img {
+    width: 300px;
+    height: 250px;
+    margin: 135px 60px;
+  }
+
+  main article section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* background e elementos da seção 2 */
+
+  .container-presentation {
+    background-image: url("../../../assets/images/background-p.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .container-presentation div h1,
+  p {
+    padding: 10px;
+  }
+
+  .container-presentation div .presentation-img2 {
+    position: inherit;
+    margin-top: 20px;
+    height: 300px;
+    width: 300px;
+  }
+
+  /* imagens da seção 3 */
+  .container-presentation div .presentation-img1 {
+    left: 10%;
+  }
+
+  .container-presentation div .presentation-img2 {
+    left: 40%;
   }
 }
