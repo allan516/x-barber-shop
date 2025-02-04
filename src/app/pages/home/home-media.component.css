@@ -115,6 +115,7 @@
     flex-direction: row !important;
     align-items: start !important;
     justify-content: space-between !important;
+    height: 85vh !important;
   }
 
   .container-presentation div {
@@ -173,8 +174,8 @@
     background-image: url("../../../assets/images/background-p.png");
     background-size: contain;
     background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
+    width: 100% !important;
+    height: 75vh !important;
   }
 
   .container-presentation div .presentation-img2 {
