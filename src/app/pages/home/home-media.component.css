@@ -174,8 +174,9 @@
     background-image: url("../../../assets/images/background-p.png");
     background-size: contain;
     background-repeat: no-repeat;
-    width: 100% !important;
-    height: 75vh !important;
+    margin-top: 50px;
+    width: 100vw !important;
+    height: 85vh !important;
   }
 
   .container-presentation div .presentation-img2 {
@@ -198,5 +199,13 @@
 @media screen and (max-width: 686px) {
   .presentation-img2 {
     display: none;
+  }
+
+  .service-presentation div {
+    margin: 15px;
+  }
+
+  .service-presentation-img2 {
+    margin: 50px 30px 100px 30px !important;
   }
 }
