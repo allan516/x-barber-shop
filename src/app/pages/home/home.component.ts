@@ -7,6 +7,6 @@ import { FooterComponent } from '../../shared/footer/footer.component';
   standalone: true,
   imports: [NavBarComponent, FooterComponent],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css',
+  styleUrls: ['./home.component.css', './home-media.component.css'],
 })
 export class HomeComponent {}
