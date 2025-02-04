@@ -115,7 +115,7 @@
     flex-direction: row !important;
     align-items: start !important;
     justify-content: space-between !important;
-    height: 85vh !important;
+    margin: 50px 0px;
   }
 
   .container-presentation div {
@@ -174,9 +174,8 @@
     background-image: url("../../../assets/images/background-p.png");
     background-size: contain;
     background-repeat: no-repeat;
-    margin-top: 50px;
-    width: 100vw !important;
-    height: 85vh !important;
+    width: 100vw;
+    height: 100vh;
   }
 
   .container-presentation div .presentation-img2 {
@@ -202,10 +201,7 @@
   }
 
   .service-presentation div {
-    margin: 15px;
-  }
-
-  .service-presentation-img2 {
-    margin: 50px 30px 100px 30px !important;
+    margin: 10px;
+    padding: 10px;
   }
 }
