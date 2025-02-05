@@ -96,11 +96,16 @@
 }
 
 @media screen and (max-width: 1200px) {
-  main article {
+  main article section {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+  }
+
+  main article section > div {
+    display: flex;
+    justify-content: center;
   }
 
   main article section .title1 {
