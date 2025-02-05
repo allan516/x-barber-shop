@@ -106,6 +106,8 @@ main article .price {
 
 /* seção de apresentação  */
 .container-presentation {
+  display: flex !important;
+  flex-direction: row !important;
   background-image: url("../../../assets/images/background2.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -116,7 +118,6 @@ main article .price {
 .container-presentation h1 {
   color: white;
   padding: 10px;
-  margin-top: 120px;
 }
 
 .container-presentation p {
@@ -124,7 +125,7 @@ main article .price {
 }
 
 .container-presentation div {
-  margin: 0px auto;
+  margin: 80px auto;
   width: 500px;
 }
 
