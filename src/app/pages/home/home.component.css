@@ -37,9 +37,18 @@ main article {
   width: 100%;
 }
 
-main article p {
-  text-align: center;
+main article .first-paragraph {
+  display: flex;
+  flex-direction: column;
   padding: 10px;
+  font-size: 1.5rem;
+  max-width: 80vw;
+  margin: 100px auto;
+}
+
+main article p strong {
+  color: #977144;
+  font-size: 3rem;
 }
 
 main article section {
@@ -55,8 +64,8 @@ main article section div {
 
 main article section .title1 {
   color: #977144;
-  font-size: 3rem;
-  margin-top: 30px;
+  font-size: 2.5rem;
+  width: 100%;
 }
 
 main article .card-service {
