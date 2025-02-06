@@ -90,6 +90,7 @@ main article img {
   width: 500px;
   height: 450px;
   margin: 50px;
+  border-radius: 1%;
 }
 
 main article .service-icons {
@@ -166,10 +167,12 @@ main article .price {
 
 .service-presentation-img1 {
   margin: 60px !important;
-  border-radius: 50% 50% 3% 3%;
+  border-radius: 50% 50% 3% 3% !important;
 }
 
 .service-presentation-img2 {
+  position: absolute;
+  left: 50%;
   clip-path: polygon(
     20% 0%,
     80% 0%,

@@ -92,10 +92,19 @@
     width: 400px;
   }
 
+  .service-presentation {
+    display: flex;
+    flex-direction: row !important;
+  }
+
   .service-presentation-img1,
   .service-presentation-img2 {
     width: 350px !important;
     height: 350px !important;
+  }
+
+  .service-presentation-img2 {
+    position: inherit;
   }
 }
 
@@ -131,11 +140,23 @@
     padding: 35px;
   }
 
+  .container-presentation div .presentation-img2 {
+    height: 300px;
+    width: 300px;
+  }
+
+  .service-presentation {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+  }
+
   .service-presentation-img1 {
     display: none;
   }
 
-  .presentation-img2 {
+  .service-presentation-img2 {
     width: 300px !important;
     height: 300px !important;
   }
@@ -164,7 +185,7 @@
 
   main article img {
     width: 300px;
-    height: 250px;
+    height: 300px;
     margin: 135px 60px;
   }
 
