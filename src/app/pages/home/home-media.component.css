@@ -230,6 +230,14 @@
 }
 
 @media screen and (max-width: 686px) {
+  header h2 {
+    margin: 0px 50px;
+    top: 20%;
+  }
+
+  header h1 {
+    left: 0%;
+  }
   .presentation-img2 {
     display: none;
   }
