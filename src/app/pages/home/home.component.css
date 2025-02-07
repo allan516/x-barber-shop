@@ -127,7 +127,12 @@ main article .price {
 
 .container-presentation div {
   margin: 80px auto;
-  width: 500px;
+  max-width: 400px;
+}
+
+.container-presentation div p {
+  margin: 0px 25px 0px 0px;
+  padding-left: 10px;
 }
 
 .container-presentation div .presentation-img1 {
