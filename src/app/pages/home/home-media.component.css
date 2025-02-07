@@ -111,11 +111,11 @@
   header h2 {
     margin: 0px 0px 0px 60px;
     top: 20%;
-    z-index: 1;
   }
 
   header h1 {
     right: 20%;
+    margin-left: 40px;
   }
   main article section {
     display: flex;

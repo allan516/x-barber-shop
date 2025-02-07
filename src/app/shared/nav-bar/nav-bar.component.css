@@ -39,6 +39,10 @@ nav a {
     color: #a17c50;
   }
 
+  nav a:hover {
+    color: wheat;
+  }
+
   nav .menu-visibility {
     visibility: visible;
     width: 32px;
