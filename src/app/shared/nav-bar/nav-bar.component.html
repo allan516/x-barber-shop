@@ -1,9 +1,13 @@
-<nav>
+<div>
   <img
     class="menu-visibility"
     src="../../../assets/icons/menu.png"
     alt="ícone de menu"
+    (click)="menuvisibility()"
   />
+</div>
+
+<nav class="visibility" [class.active]="menuToggle">
   <a href="">Home</a>
   <a href="">Sobre</a>
   <a href="">Serviços</a>
