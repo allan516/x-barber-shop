@@ -212,6 +212,7 @@
   main article p-carousel {
     display: block;
     width: 90vw;
+    margin-bottom: 70px;
   }
 
   main article p-carousel img {
