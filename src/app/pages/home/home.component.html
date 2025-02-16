@@ -18,51 +18,20 @@
         src="../../../assets/images/barbershop-styling-hair.jpg"
         alt=""
       />
+
       <div>
         <h1 class="title1">O que oferecemos aos nossos Clientes</h1>
-        <span class="card-service">
+        <span class="card-service" *ngFor="let product of products">
           <div>
             <img
               class="service-icons"
-              src="../../../assets/icons/lamina.png"
-              alt=""
+              src="{{ product.image }}"
+              alt="ícone do produto"
             />
-            <h1>Barba Tradicional</h1>
-            <p>Alinhada com técnica, garantindo um visual impecável.</p>
+            <h1>{{ product.title }}</h1>
+            <p>{{ product.paragraph }}</p>
           </div>
-          <h2 class="price">$ 40</h2>
-        </span>
-
-        <span class="card-service">
-          <div>
-            <img
-              class="service-icons"
-              src="../../../assets/icons/maquina.png"
-              alt=""
-            />
-            <h1>Degradê Premium</h1>
-            <p>
-              Transições suaves e bem definidas para um look moderno e
-              impecável.
-            </p>
-          </div>
-          <h2 class="price">$ 50</h2>
-        </span>
-
-        <span class="card-service">
-          <div>
-            <img
-              class="service-icons"
-              src="../../../assets/icons/tesoura.png"
-              alt=""
-            />
-            <h1>Corte Clássico</h1>
-            <p>
-              Um corte atemporal, perfeito para qualquer ocasião. Feito com
-              precisão e estilo.
-            </p>
-          </div>
-          <h2 class="price">$ 40</h2>
+          <h2 class="price">{{ product.price }}</h2>
         </span>
       </div>
     </section>

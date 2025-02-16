@@ -129,17 +129,13 @@
     text-align: center;
     color: #977144;
     font-size: 2rem;
-    margin-top: 20px;
+    margin: 50px auto;
   }
 
   .container-presentation {
     background-image: url("../../../assets/images/background-m.png");
     background-size: contain;
     height: 80vh;
-  }
-
-  .container-presentation div {
-    padding: 0px 35px;
   }
 
   .container-presentation div .presentation-img2 {
@@ -205,7 +201,7 @@
     margin: 60px 0px;
   }
 
-  main article section div {
+  main article section div .card-service {
     display: none;
   }
 
@@ -249,16 +245,6 @@
 
   /* background e elementos da seção 2 */
 
-  /* .container-presentation {
-    display: flex;
-    flex-direction: column !important;
-    background-image: url("../../../assets/images/background-p.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 60vh;
-  } */
-
   .container-presentation {
     background-image: url("../../../assets/images/background-p.png");
     background-size: cover;
@@ -276,6 +262,7 @@
 
   .container-presentation div {
     margin: 0px auto;
+    max-width: 100%;
   }
 
   .container-presentation div .presentation-img2 {
