@@ -185,7 +185,7 @@
     display: flex;
     flex-direction: column;
     padding: 10px;
-    font-size: 1.3rem;
+    font-size: 1rem;
     max-width: 80vw;
     margin: 50px auto;
   }
@@ -258,6 +258,8 @@
 
   .container-presentation p {
     margin: 40px 0px 0px 50px !important;
+    padding-right: 20px;
+    text-align: justify;
   }
 
   .container-presentation div {
@@ -273,14 +275,17 @@
 }
 
 @media screen and (max-width: 686px) {
+  header h1 {
+    left: 0%;
+    font-size: 2rem;
+  }
+
   header h2 {
     margin: 0px 0px 0px 60px;
     top: 20%;
+    font-size: 1rem;
   }
 
-  header h1 {
-    left: 0%;
-  }
   .presentation-img2 {
     display: none;
   }
