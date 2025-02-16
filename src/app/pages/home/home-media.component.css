@@ -277,15 +277,12 @@
 @media screen and (max-width: 686px) {
   header h1 {
     left: 0%;
-    font-size: 2rem;
   }
 
   header h2 {
     margin: 0px 0px 0px 60px;
     top: 20%;
-    font-size: 1rem;
   }
-
   .presentation-img2 {
     display: none;
   }
