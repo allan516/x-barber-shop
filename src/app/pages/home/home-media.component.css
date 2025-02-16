@@ -213,10 +213,19 @@
   }
 
   main article section div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: none;
+  }
+
+  main article p-carousel {
+    display: block;
+    width: 90vw;
+  }
+
+  main article p-carousel img {
+    display: block;
+    margin: 60px auto;
+    height: inherit;
+    width: inherit;
   }
 
   /* background e elementos da seção 2 */

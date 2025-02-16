@@ -105,6 +105,10 @@ main article .price {
   font-size: 3rem;
 }
 
+main article p-carousel {
+  display: none;
+}
+
 /* seção de apresentação  */
 .container-presentation {
   display: flex !important;

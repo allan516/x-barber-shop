@@ -66,6 +66,51 @@
         </span>
       </div>
     </section>
+    <p-carousel
+      [value]="products"
+      [numVisible]="3"
+      [numScroll]="3"
+      [circular]="false"
+      [responsiveOptions]="responsiveOptions"
+    >
+      <ng-template let-product pTemplate="item">
+        <div class="border-1 surface-border border-round m-2 p-3">
+          <div class="mb-3">
+            <div class="relative mx-auto">
+              <img
+                src="{{ product.image }}"
+                [alt]=""
+                class="w-full border-round"
+              />
+              <p-tag
+                [value]="product.inventoryStatus"
+                class="absolute"
+                [ngStyle]="{ 'left.px': 5, 'top.px': 5 }"
+              />
+            </div>
+          </div>
+          <div>
+            {{ product.title }}
+          </div>
+          <div class="mb-3 font-medium">
+            {{ product.paragraph }}
+          </div>
+          <div class="flex justify-content-between align-items-center">
+            <div class="mt-0 font-semibold text-xl">
+              {{ "$" + product.price }}
+            </div>
+            <span>
+              <p-button
+                icon="pi pi-heart"
+                severity="secondary"
+                [outlined]="true"
+              />
+              <p-button icon="pi pi-shopping-cart" styleClass="ml-2" />
+            </span>
+          </div>
+        </div>
+      </ng-template>
+    </p-carousel>
   </article>
 
   <article class="container-presentation">
