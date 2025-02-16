@@ -276,11 +276,13 @@
 
 @media screen and (max-width: 686px) {
   header h1 {
-    left: 0%;
+    position: absolute;
+    right: 30%;
+    top: 10%;
   }
 
   header h2 {
-    margin: 0px 0px 0px 60px;
+    position: absolute;
     top: 20%;
   }
   .presentation-img2 {
