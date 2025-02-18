@@ -25,9 +25,12 @@ import { TagModule } from 'primeng/tag';
   ],
   animations: [
     trigger('scrollState', [
-      state('notScrolled', style({ opacity: 0, transform: 'translateX(0)' })),
+      state(
+        'notScrolled',
+        style({ opacity: 0, transform: 'translateX(-1000px)' })
+      ),
       state('scrolled', style({ opacity: 1, transform: 'translateX(0px)' })),
-      transition('notScrolled <=> scrolled', [animate('0.8s ease-in-out')]),
+      transition('notScrolled <=> scrolled', [animate('1s ease-in-out')]),
     ]),
   ],
   templateUrl: './home.component.html',
@@ -44,7 +47,7 @@ export class HomeComponent implements OnInit {
       document.documentElement.scrollHeight - window.innerHeight;
     const scrollPercentage = (scrollPosition / documentHeight) * 100;
 
-    if (scrollPercentage > 22) {
+    if (scrollPercentage > 10) {
       this.scrollState = 'scrolled';
     } else {
       this.scrollState = 'notScrolled';
