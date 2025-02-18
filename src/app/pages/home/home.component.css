@@ -194,3 +194,20 @@ main article p-carousel {
     0 0
   );
 }
+
+/* seção animação */
+
+.animation1 {
+  position: relative;
+  overflow: hidden;
+}
+
+.animation2 {
+  position: relative;
+  overflow: hidden;
+}
+
+.animation3 {
+  position: relative;
+  overflow: hidden;
+}

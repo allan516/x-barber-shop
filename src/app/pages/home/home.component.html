@@ -12,29 +12,30 @@
       pensado para proporcion
     </p>
 
-    <section [@scrollState]="scrollState">
-      <img
-        class="photo1"
-        src="../../../assets/images/barbershop-styling-hair.jpg"
-        alt=""
-      />
-
-      <div>
-        <h1 class="title1">O que oferecemos aos nossos Clientes</h1>
-        <span class="card-service" *ngFor="let product of products">
-          <div>
-            <img
-              class="service-icons"
-              src="{{ product.image }}"
-              alt="ícone do produto"
-            />
-            <h1>{{ product.title }}</h1>
-            <p>{{ product.paragraph }}</p>
-          </div>
-          <h2 class="price">{{ product.price }}</h2>
-        </span>
-      </div>
-    </section>
+    <div class="animation1">
+      <section [@scrollState]="scrollState">
+        <img
+          class="photo1"
+          src="../../../assets/images/barbershop-styling-hair.jpg"
+          alt=""
+        />
+        <div>
+          <h1 class="title1">O que oferecemos aos nossos Clientes</h1>
+          <span class="card-service" *ngFor="let product of products">
+            <div>
+              <img
+                class="service-icons"
+                src="{{ product.image }}"
+                alt="ícone do produto"
+              />
+              <h1>{{ product.title }}</h1>
+              <p>{{ product.paragraph }}</p>
+            </div>
+            <h2 class="price">{{ product.price }}</h2>
+          </span>
+        </div>
+      </section>
+    </div>
     <p-carousel
       [value]="products"
       [numVisible]="3"
@@ -82,61 +83,64 @@
     </p-carousel>
   </article>
 
-  <article
-    class="container-presentation"
-    [@scrollStateSection2]="scrollStateSection2"
-  >
-    <div>
-      <h1>Nossos barbeiros são especialistas em estilo e qualidade.</h1>
-      <p>
-        Valorizamos a excelência em cada serviço, desde um simples acabamento
-        até uma transformação completa. Nosso compromisso é com a sua
-        satisfação, oferecendo um ambiente acolhedor, produtos de alta qualidade
-        e profissionais apaixonados pelo que fazem. Aqui, seu estilo é tratado
-        com o respeito e a dedicação que merece.
-      </p>
-    </div>
+  <div class="animation2">
+    <article
+      class="container-presentation"
+      [@scrollStateSection2]="scrollStateSection2"
+    >
+      <div>
+        <h1>Nossos barbeiros são especialistas em estilo e qualidade.</h1>
+        <p>
+          Valorizamos a excelência em cada serviço, desde um simples acabamento
+          até uma transformação completa. Nosso compromisso é com a sua
+          satisfação, oferecendo um ambiente acolhedor, produtos de alta
+          qualidade e profissionais apaixonados pelo que fazem. Aqui, seu estilo
+          é tratado com o respeito e a dedicação que merece.
+        </p>
+      </div>
+      <div>
+        <img
+          class="presentation-img presentation-img1"
+          src="../../../assets/images/client-hairdresser-posing-selfie.jpg"
+          alt=""
+        />
+        <img
+          class="presentation-img presentation-img2"
+          src="../../../assets/images/man-mirror-barbershop.jpg"
+          alt=""
+        />
+      </div>
+    </article>
+  </div>
 
-    <div>
+  <div class="animation3">
+    <article
+      class="service-presentation"
+      [@scrollStateSection3]="scrollStateSection3"
+    >
+      <div>
+        <h1>
+          Descubra o corte e a barba perfeitos para realçar sua personalidade.
+        </h1>
+        <p>
+          Utilizamos técnicas avançadas de visagismo para criar um estilo que
+          combina com o formato do seu rosto, realça seus traços e reflete sua
+          identidade. Com profissionais experientes e um atendimento de alto
+          nível, garantimos um visual impecável e personalizado para você.
+        </p>
+        <img
+          class="service-presentation-img1"
+          src="../../../assets/images/pexels-jibarofoto-1453005.jpg"
+          alt="Barbeiro cortando o cabelo do cliente"
+        />
+      </div>
       <img
-        class="presentation-img presentation-img1"
-        src="../../../assets/images/client-hairdresser-posing-selfie.jpg"
+        class="service-presentation-img2"
+        src="../../../assets/images/man-barbershop-salon-doing-haircut-beard-trim.jpg"
         alt=""
       />
-      <img
-        class="presentation-img presentation-img2"
-        src="../../../assets/images/man-mirror-barbershop.jpg"
-        alt=""
-      />
-    </div>
-  </article>
-
-  <article
-    class="service-presentation"
-    [@scrollStateSection3]="scrollStateSection3"
-  >
-    <div>
-      <h1>
-        Descubra o corte e a barba perfeitos para realçar sua personalidade.
-      </h1>
-      <p>
-        Utilizamos técnicas avançadas de visagismo para criar um estilo que
-        combina com o formato do seu rosto, realça seus traços e reflete sua
-        identidade. Com profissionais experientes e um atendimento de alto
-        nível, garantimos um visual impecável e personalizado para você.
-      </p>
-      <img
-        class="service-presentation-img1"
-        src="../../../assets/images/pexels-jibarofoto-1453005.jpg"
-        alt="Barbeiro cortando o cabelo do cliente"
-      />
-    </div>
-    <img
-      class="service-presentation-img2"
-      src="../../../assets/images/man-barbershop-salon-doing-haircut-beard-trim.jpg"
-      alt=""
-    />
-  </article>
+    </article>
+  </div>
 </main>
 
 <footer-app></footer-app>
