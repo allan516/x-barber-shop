@@ -30,7 +30,35 @@ import { TagModule } from 'primeng/tag';
         style({ opacity: 0, transform: 'translateX(-1000px)' })
       ),
       state('scrolled', style({ opacity: 1, transform: 'translateX(0px)' })),
-      transition('notScrolled <=> scrolled', [animate('1s ease-in-out')]),
+      transition('notScrolled <=> scrolled', [animate('1.2s ease-in-out')]),
+    ]),
+
+    trigger('scrollStateSection2', [
+      state(
+        'sectionNotScrolled',
+        style({ opacity: 0, transform: 'translateY(1000px)' })
+      ),
+      state(
+        'sectionScrolled',
+        style({ opacity: 1, transform: 'translateY(0px)' })
+      ),
+      transition('sectionNotScrolled <=> sectionScrolled', [
+        animate('1.2s ease-in-out'),
+      ]),
+    ]),
+
+    trigger('scrollStateSection3', [
+      state(
+        'sectionNotScrolled',
+        style({ opacity: 0, transform: 'translateX(1000px)' })
+      ),
+      state(
+        'sectionScrolled',
+        style({ opacity: 1, transform: 'translateX(0px)' })
+      ),
+      transition('sectionNotScrolled <=> sectionScrolled', [
+        animate('1.2s ease-in-out'),
+      ]),
     ]),
   ],
   templateUrl: './home.component.html',
@@ -38,6 +66,8 @@ import { TagModule } from 'primeng/tag';
 })
 export class HomeComponent implements OnInit {
   scrollState: string = 'notScrolled';
+  scrollStateSection2: string = 'sectionNotScrolled';
+  scrollStateSection3: string = 'sectionNotScrolled';
 
   // Usar HostListener para escutar o evento de scroll
   @HostListener('window:scroll', ['$event'])
@@ -46,11 +76,23 @@ export class HomeComponent implements OnInit {
     const documentHeight =
       document.documentElement.scrollHeight - window.innerHeight;
     const scrollPercentage = (scrollPosition / documentHeight) * 100;
+    console.log(scrollPercentage);
 
-    if (scrollPercentage > 10) {
+    if (scrollPercentage > 4) {
       this.scrollState = 'scrolled';
     } else {
       this.scrollState = 'notScrolled';
+    }
+    if (scrollPercentage > 30) {
+      this.scrollStateSection2 = 'sectionScrolled';
+    } else {
+      this.scrollStateSection2 = 'sectionNotScrolled';
+    }
+
+    if (scrollPercentage > 60) {
+      this.scrollStateSection3 = 'sectionScrolled';
+    } else {
+      this.scrollStateSection3 = 'sectionNotScrolled';
     }
   }
 
