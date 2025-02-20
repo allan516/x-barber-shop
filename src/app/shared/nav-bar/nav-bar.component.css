@@ -4,6 +4,10 @@ nav {
   width: 100% !important;
 }
 
+nav.fixed {
+  position: fixed;
+}
+
 .menu-visibility {
   visibility: hidden;
   width: 32px;

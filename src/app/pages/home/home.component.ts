@@ -76,7 +76,6 @@ export class HomeComponent implements OnInit {
     const documentHeight =
       document.documentElement.scrollHeight - window.innerHeight;
     const scrollPercentage = (scrollPosition / documentHeight) * 100;
-    console.log(scrollPercentage);
 
     if (scrollPercentage > 4) {
       this.scrollState = 'scrolled';
