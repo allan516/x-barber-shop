@@ -9,15 +9,13 @@ import { Component, HostListener } from '@angular/core';
 })
 export class NavBarComponent {
   menuToggle: boolean = false;
-  showMenu: boolean = false;
+  top: boolean = false;
 
   @HostListener('window:scroll', [])
-  onScrollTop() {
+  buttonTop() {
     const currentScroll = document.documentElement.scrollTop;
-    const scrollTop = window.scrollY;
 
-    console.log('Scroll normal ' + currentScroll);
-    console.log('Scroll top ' + scrollTop);
+    currentScroll > 1400 ? (this.top = true) : (this.top = false);
   }
 
   menuvisibility() {

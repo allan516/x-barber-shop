@@ -2,10 +2,29 @@ nav {
   opacity: 0.8;
   padding: 25px;
   width: 100% !important;
+  z-index: 999;
 }
 
-nav.fixed {
+.arrow {
+  display: none;
+}
+
+.arrow a > img {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.arrow_upward {
+  display: block;
   position: fixed;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  top: 50%;
+  left: 90%;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.466) !important;
 }
 
 .menu-visibility {
