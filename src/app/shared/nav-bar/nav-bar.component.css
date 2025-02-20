@@ -9,12 +9,7 @@ nav {
   display: none;
 }
 
-.arrow a > img {
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-}
-
+.arrow a > img,
 .arrow_upward {
   display: block;
   position: fixed;
@@ -22,9 +17,9 @@ nav {
   width: 32px;
   height: 32px;
   top: 50%;
-  left: 90%;
+  left: 92%;
   z-index: 999;
-  background-color: rgba(0, 0, 0, 0.466) !important;
+  background-color: rgba(0, 0, 0, 0.301) !important;
 }
 
 .menu-visibility {

@@ -8,3 +8,7 @@
   border: none;
   list-style-type: none;
 }
+
+html {
+  scroll-behavior: smooth; /* Rolagem suave */
+}
