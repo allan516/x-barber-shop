@@ -16,3 +16,5 @@ Site de uma barbearia moderna e responsiva. O objetivo deste projeto é praticar
 - **TypeScript** - Linguagem utilizada para desenvolvimento
 - **PrimeNG** - Biblioteca de componentes UI (usada para carousel de preços e serviços)
 - **HTML5 & CSS3** - Estrutura e estilização
+
+<img src="./src/assets/gif/video-xbarber.gif" alt="Gif Xbarber" width="600" height="300">
